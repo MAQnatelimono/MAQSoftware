@@ -1,3 +1,16 @@
+
+var oVisualData=null,
+  iTotalVisuals=0,
+  pageIndex=0,
+  iMaxPageIndex,
+  selectedButton = " ",
+  selectedButtonNum = 1,
+  paginationContainer,
+  sLoadingClass = "Loading";
+var oVisualPager = {
+  pageIndex: 0,
+  pageSize: 8
+}
 var pageSection,
   visualTemplate =
     '<div class="item"><div class="nf-col-padding"><div class="item-box"><div class="shop-item"><div class="item-img"> <img style="height: 12em !important" alt="@name" src="@img"/> </div><div class="item-mask"><div class="item-mask-detail"><div class="item-caption text-center" style="color:white;"><div> @description </div><a href="../expertise/powerbi/custom-visuals/@visualpageurl" class="btn btn-line-xs btn-white-line"> <i class="fa"></i>Learn More </a> </div></div></div></div><div class="shop-item-info" style=" display: flex;justify-content: center;align-items: center;"><h6 class="shop-item-name"><a href="@url" target="_blank"> @name </a></h6><span> <a target="_blank" href="@pbicertifiedurl"><img class="certified" title ="@starimagetitle" src="@certifiedstarimage"></img></a></span></div></div></div></div>',
@@ -101,7 +114,7 @@ function loadPlugins() {
   //   if (!$(".power-bi-carousel").length) {
   //     PowerBIVisualsConfig();
   //   }
-  PowerBIVisualsConfig();
+  // PowerBIVisualsConfig();
   //   SliderConfig();
   // containerGridMasonry();
   //   scrollCallbackEle();
@@ -288,6 +301,7 @@ function PowerBIsliderConfig() {
 function PowerBIVisualsConfig() {
   $.getJSON("/resources/powerbi visuals/Visuals.json", function (data) {
     RenderPowerBIVisuals(data);
+    loadPages(data)
   });
 }
 function RenderMartech() {
@@ -364,9 +378,9 @@ function RenderPowerBIVisuals(oVisualConfig) {
         );
     });
   });
-  visualContentContainer.append(visualContentHtml);
+  // visualContentContainer.append(visualContentHtml);
   //modalContainer.append(modalContentHtml);
-  viewAllContainer.append(viewAllContentHtml);
+  viewAllContainer.append(viewAllContentHtml);  
   /*  $(document).on('shown.bs.modal', '#modelChart .product_view', function () {
             $("#PowerBISliderVisual").trigger('stop.owl.autoplay');
             $(this).find(".modal_videos")[0].play();
@@ -375,6 +389,138 @@ function RenderPowerBIVisuals(oVisualConfig) {
             $("#PowerBISliderVisual").trigger('play.owl.autoplay');
             $(this).find(".modal_videos")[0].pause();
         });*/
+}
+
+function pageNavigation(){
+  paginationContainer = $("#CustomVisualPagesContainer"),
+  PowerBIVisualsConfig()
+  // loadPages(oVisualData)
+  var buttonID = "#"+selectedButtonNum.toString();
+  $(buttonID).children("a").addClass("selected-button");
+  selectedButton = buttonID;
+  $("#pagination p").click(function () {
+    $(selectedButton).children("a").removeClass("selected-button");
+    var oCurrentElement = $(this),
+      iClicked = oCurrentElement.attr("data-clicked");
+    console.log("Clicked:", iClicked);
+    if (!oCurrentElement.hasClass("hidden")) {
+      if (iClicked === "000") {
+        oVisualPager.pageIndex--;
+        selectedButtonNum--;
+        if (oVisualPager.pageIndex <= 0) {
+          oVisualPager.pageIndex = 0;
+          selectedButtonNum = 1;
+        }
+        var buttonID = "#" + selectedButtonNum.toString();
+        $(buttonID).children("a").addClass("selected-button");
+        selectedButton = buttonID;
+      } else if (iClicked === "100") {
+        oVisualPager.pageIndex++;
+        selectedButtonNum++;
+        if (oVisualPager.pageIndex >= iMaxPageIndex) {
+          oVisualPager.pageIndex = iMaxPageIndex;
+          // $("#Next").addClass("hidden");
+          selectedButtonNum = 5;
+        } else {
+          // $("#Previous").removeClass("hidden");
+          // $("#Previous").prop("disabled", true);
+        }
+        var buttonID = "#" + selectedButtonNum.toString();
+        $(buttonID).children("a").addClass("selected-button");
+        selectedButton = buttonID;
+      } else {
+        oVisualPager.pageIndex = parseInt(iClicked);
+        selectedButtonNum = oVisualPager.pageIndex + 1;
+        var buttonID = "#" + selectedButtonNum.toString();
+        $(buttonID).children("a").addClass("selected-button");
+        selectedButton = buttonID;
+        if (oVisualPager.pageIndex <= 0) {
+          oVisualPager.pageIndex = 0;
+          // $("#Previous").addClass("hidden");
+          // $("#Previous").prop("disabled", true);
+        } else if (oVisualPager.pageIndex >= iMaxPageIndex) {
+          oVisualPager.pageIndex = iMaxPageIndex;
+          // $("#Next").addClass("hidden");
+        } else {
+          // $("#Previous").removeClass("hidden");
+        }
+      }
+      console.log("Page Index", oVisualPager.pageIndex);
+      paginationContainer.html("").addClass(sLoadingClass);
+
+      
+      renderVisualPages()
+    }
+  });
+  // loadPages(oVisualData)
+}
+
+function loadPages(oVisualConfig){
+  try {
+    var parser = new DOMParser();
+    oVisualData = oVisualConfig;
+    iTotalVisuals = oVisualData.length;
+    console.log(iTotalVisuals)
+    if (iTotalVisuals) {
+      iMaxPageIndex = Math.round(iTotalVisuals / 8)+1;
+      console.log(iMaxPageIndex)
+      // $("#Pagination").show();
+      renderVisualPages();
+    }
+  } catch (ignore) {}
+}
+
+function renderVisualPages(){
+  var iStart=0,
+    iEnd=100,
+    entry,
+    pageContent=""
+  if(iTotalVisuals){
+    // console.log(oVisualPager.pageIndex)
+    iStart=oVisualPager.pageIndex*oVisualPager.pageSize;
+    if(iStart>=iTotalVisuals){
+      iStart = iTotalVisuals-1;
+      oVisualPager.pageIndex = iStart;
+    }else if(iStart<=0){
+      iStart=0;
+      oVisualPager.pageIndex=iStart;
+    }
+    iEnd=iStart+oVisualPager.pageSize;
+    iEnd = (iEnd>iTotalVisuals)?iTotalVisuals:iEnd;
+
+    console.log("start :", iStart,"end :",iEnd);
+
+    for(iIterator=iStart;iIterator<iEnd;iIterator++){
+      // console.log("HERE")
+      entry=oVisualData[iIterator];
+      
+      if(entry){
+        // console.log(entry[Object.keys(entry)[0]])
+        obj = entry[Object.keys(entry)[0]]
+        pageContent += viewAllVisualTemplate
+        .replace(/@name/g, obj.name)
+        .replace(/@img/g, obj.img)
+        .replace(/@id/g, obj.id)
+        // .replace(/@url/g, oVisualConfig[index][this].url)
+        // .replace(/@url/g, "/resources/customVisuals/VisualDetail?id="+oVisualConfig[index][this].id)
+        .replace(/@url/g, "/resources/Power-BI-custom-visuals/"+obj.id)
+        .replace(/@category/g, obj.category)
+        .replace(/@description/g, obj.description)
+        .replace(/@linkToArticle/g, obj.linkToArticle)
+        .replace(/@linkToBadge/g, obj.linkToBadge)
+        .replace(/@certifiedstarimage/g,obj.certifiedstarimage)
+        .replace(/@starimagetitle/g, obj.starimagetitle)
+        .replace(/@pbicertifiedurl/g,obj.pbicertifiedurl)
+        .replace(/@visualpageurl/g, obj.name.replaceAll(" ", "-")
+          .replace(/@linkToArticle/g, obj.linkToArticle)
+          .replace(/@linkToBadge/g, obj.linkToBadge)
+        );
+        // console.log(pageContent)
+        
+      }
+    }
+    paginationContainer.append(pageContent)
+  }
 }
 function sliderAll(oSliderConfig) {
   //full-width slider
@@ -848,6 +994,7 @@ function containerGridMasonry() {
     .off("click", ".categories")
     .on("click", ".categories", function () {
       var filterValue = $(this).attr("data-filter");
+      console.log(filterValue)
       $container2.isotope({ filter: filterValue });
     });
 
