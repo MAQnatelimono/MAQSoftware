@@ -6,16 +6,16 @@
     <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Power BI Custom Visual | MAQ Software" />
+    <meta property="og:title" content="Brick Chart | MAQ Software" />
     <meta property="og:type" content="website" />
     <meta property="og:description"
-        content="Expand your reporting capabilities with our certified Power BI custom visuals. If you need help choosing the right visual for your report, try our visual guide." />
+        content="<p>Brick Chart by MAQ Software allows users to display a percentage breakdown of a category in an alternative format to a donut or pie chart. This visual is useful for showing percentages or positions occupied, such as seats in a legislature. It is also useful for comparing each portion of a category to the whole.</p><p>Key features:</p><ul><li>Tooltip to indicate the category each color represents and its corresponding percentage.</li><li>Option to include a legend with a customizable title, size, and color.</li><li>Customizable chart width and height.</li></ul>" />
 
     <!-- Twitter Theme -->
     <meta name="twitter:widgets:theme" content="light">
 
     <!-- Title &amp; Favicon -->
-    <title>Power BI Custom Visual | MAQ Software</title>
+    <!-- <title>BrickChart | MAQ Software</title> loaded dynamically in customVisual.JS--> 
     <link rel="shortcut icon" type="image/x-icon" href="/images/logos/MAQ-Software-URL.png">
 
     <!-- Font -->
@@ -92,7 +92,6 @@
                         </div>
                         <div >
                             <div class="col-md-12" id="whatsNewContainer">
-                                <h4 class="title-xsmall">What's New</h4>
                                 <ul id="whatsNewList">
                                 </ul>
                             </div>
@@ -123,7 +122,7 @@
 <script src="/js/timber.master.min.js"></script>
 <script src="/js/customvisual.js?v=20230228"></script>
 <script>
-	getData();
+	getData("BrickChart");
 </script>
 <script>
     $("#header").load("/header");

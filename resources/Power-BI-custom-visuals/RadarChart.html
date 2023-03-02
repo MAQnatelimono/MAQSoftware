@@ -6,16 +6,16 @@
     <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Power BI Custom Visual | MAQ Software" />
+    <meta property="og:title" content="Radar Chart | MAQ Software" />
     <meta property="og:type" content="website" />
     <meta property="og:description"
-        content="Expand your reporting capabilities with our certified Power BI custom visuals. If you need help choosing the right visual for your report, try our visual guide." />
+        content="<p>Radar chart consists of a sequence of equiangular spokes, with each spoke representing one of the variables. A line is drawn connecting the data values for each spoke which gives the plot a star-like appearance.</p><p> Business Use Cases:</p><ul><li>Finance - Compare the performance of multiple companies along multiple business parameters, such as sales, profit, etc.</li><li>Product management - Compare products across multiple features/specifications</li><li>People operations - Outlines employee competencies across the KPIs</li></ul><p>Key features:</p><ul><li>Ability to plot multivariate data</li><li>Configurable curve interpolation method</li><li>Ability to change stroke width and transparency of plot color</li><li>Display data points on plot, set color and data point radius</li><li>Ability to change colors for plots</li><li>Configurable legend positioning and formatting</li><li>Ability to show/hide axes, customize axes color, stroke width and position</li><li>Cross-filter other visuals and legend interactivity</li><li>Support for context menu</li><li>Display data values and set text color</li></ul>" />
 
     <!-- Twitter Theme -->
     <meta name="twitter:widgets:theme" content="light">
 
     <!-- Title &amp; Favicon -->
-    <title>Power BI Custom Visual | MAQ Software</title>
+    <!-- <title>Radar Chart | MAQ Software</title> -->
     <link rel="shortcut icon" type="image/x-icon" href="/images/logos/MAQ-Software-URL.png">
 
     <!-- Font -->
@@ -92,7 +92,6 @@
                         </div>
                         <div >
                             <div class="col-md-12" id="whatsNewContainer">
-                                <h4 class="title-xsmall">What's New</h4>
                                 <ul id="whatsNewList">
                                 </ul>
                             </div>
@@ -123,7 +122,7 @@
 <script src="/js/timber.master.min.js"></script>
 <script src="/js/customvisual.js?v=20230228"></script>
 <script>
-	getData();
+	getData("RadarChart");
 </script>
 <script>
     $("#header").load("/header");

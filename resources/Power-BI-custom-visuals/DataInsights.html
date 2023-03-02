@@ -6,16 +6,16 @@
     <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Power BI Custom Visual | MAQ Software" />
+    <meta property="og:title" content="Data Insights | MAQ Software" />
     <meta property="og:type" content="website" />
     <meta property="og:description"
-        content="Expand your reporting capabilities with our certified Power BI custom visuals. If you need help choosing the right visual for your report, try our visual guide." />
+        content="<p>Data Insights by MAQ Software allows users to view data in multiple formats and quickly narrow data results. Users can switch between horizontal bar, vertical bar, brick, or tabular formats. With Data Insights by MAQ Software, users can easily explore data, select specific data, and view selected data in the format that best fits individual business needs.</p><p>Key features:</p><ul><li>Display data in bar, brick, and tabular formats.</li><li>Custom text and background colors.</li><li>Tooltips with additional insights.</li></ul><p>Business Applications:</p><ul><li>Display multiple sales KPIs simultaneously.</li><li>Shift between multiple KPIs or reporting periods by changing the axis base.</li></ul>" />
 
     <!-- Twitter Theme -->
     <meta name="twitter:widgets:theme" content="light">
 
     <!-- Title &amp; Favicon -->
-    <title>Power BI Custom Visual | MAQ Software</title>
+    <!-- <title>DataInsights | MAQ Software</title> loaded dynamically in customVisual.JS--> 
     <link rel="shortcut icon" type="image/x-icon" href="/images/logos/MAQ-Software-URL.png">
 
     <!-- Font -->
@@ -92,7 +92,6 @@
                         </div>
                         <div >
                             <div class="col-md-12" id="whatsNewContainer">
-                                <h4 class="title-xsmall">What's New</h4>
                                 <ul id="whatsNewList">
                                 </ul>
                             </div>
@@ -123,7 +122,7 @@
 <script src="/js/timber.master.min.js"></script>
 <script src="/js/customvisual.js?v=20230228"></script>
 <script>
-	getData();
+	getData("DataInsights");
 </script>
 <script>
     $("#header").load("/header");

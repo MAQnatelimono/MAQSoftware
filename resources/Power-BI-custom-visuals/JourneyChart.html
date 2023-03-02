@@ -6,16 +6,16 @@
     <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Power BI Custom Visual | MAQ Software" />
+    <meta property="og:title" content="Journey Chart | MAQ Software" />
     <meta property="og:type" content="website" />
     <meta property="og:description"
-        content="Expand your reporting capabilities with our certified Power BI custom visuals. If you need help choosing the right visual for your report, try our visual guide." />
+        content="<p>Journey Chart by MAQ Software lets users display complex, multi-stage lead paths in a clean, uncluttered visual. In this visual, nodes represent categories and vertices represent relationships between categories. The bigger the node or vertex, the larger the value. Customizable node colors make distinguishing between categories easy.</p><p>Journey Chart by MAQ Software is useful for explaining process flow, uncovering underlying patterns, highlighting subcategories stemming from a single source, and showing connections between categories.</p><p>Key features:</p><ul><li>Text labels and tooltips for each node provide information such as title or value.</li><li>Customize colors and sizes for text labels.</li><li>Option to add a legend to clarify complex graphs.</li></ul>" />
 
     <!-- Twitter Theme -->
     <meta name="twitter:widgets:theme" content="light">
 
     <!-- Title &amp; Favicon -->
-    <title>Power BI Custom Visual | MAQ Software</title>
+    <!-- <title>Journey Chart Chart | MAQ Software</title> loaded dynamically in customVisual.JS--> 
     <link rel="shortcut icon" type="image/x-icon" href="/images/logos/MAQ-Software-URL.png">
 
     <!-- Font -->
@@ -92,7 +92,6 @@
                         </div>
                         <div >
                             <div class="col-md-12" id="whatsNewContainer">
-                                <h4 class="title-xsmall">What's New</h4>
                                 <ul id="whatsNewList">
                                 </ul>
                             </div>
@@ -123,7 +122,7 @@
 <script src="/js/timber.master.min.js"></script>
 <script src="/js/customvisual.js?v=20230228"></script>
 <script>
-	getData();
+	getData("JourneyChart");
 </script>
 <script>
     $("#header").load("/header");

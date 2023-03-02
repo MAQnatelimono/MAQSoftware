@@ -6,16 +6,16 @@
     <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Power BI Custom Visual | MAQ Software" />
+    <meta property="og:title" content="Hourglass Chart | MAQ Software" />
     <meta property="og:type" content="website" />
     <meta property="og:description"
-        content="Expand your reporting capabilities with our certified Power BI custom visuals. If you need help choosing the right visual for your report, try our visual guide." />
+        content="<p>Hourglass by MAQ Software lets users compare category values between two scenarios. For example, users can compare category values before and after an event or values at a source versus at a destination. This visual can also display conversion rates or changes in values.</p><p>Hourglass by MAQ Software is useful for any scenario where users must compare data before and after an event takes place, such as when comparing the number of scheduled flights versus the number of delayed flights between multiple airports.</p><p>Key features:</p><ul><li>Highlight individual categories on click.</li><li>Rotate the visual horizontally or vertically.</li><li>Animate individual categories on hover.</li><li>Add or remove the conversion box. </li></ul>" />
 
     <!-- Twitter Theme -->
     <meta name="twitter:widgets:theme" content="light">
 
     <!-- Title &amp; Favicon -->
-    <title>Power BI Custom Visual | MAQ Software</title>
+    <!-- <title>Hourglass Chart | MAQ Software</title> loaded dynamically in customVisual.JS--> 
     <link rel="shortcut icon" type="image/x-icon" href="/images/logos/MAQ-Software-URL.png">
 
     <!-- Font -->
@@ -92,7 +92,6 @@
                         </div>
                         <div >
                             <div class="col-md-12" id="whatsNewContainer">
-                                <h4 class="title-xsmall">What's New</h4>
                                 <ul id="whatsNewList">
                                 </ul>
                             </div>
@@ -123,7 +122,7 @@
 <script src="/js/timber.master.min.js"></script>
 <script src="/js/customvisual.js?v=20230228"></script>
 <script>
-	getData();
+	getData("HourglassChart");
 </script>
 <script>
     $("#header").load("/header");

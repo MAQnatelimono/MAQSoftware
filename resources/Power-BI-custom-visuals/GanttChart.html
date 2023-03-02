@@ -6,16 +6,16 @@
     <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Power BI Custom Visual | MAQ Software" />
+    <meta property="og:title" content="Gantt Chart | MAQ Software" />
     <meta property="og:type" content="website" />
     <meta property="og:description"
-        content="Expand your reporting capabilities with our certified Power BI custom visuals. If you need help choosing the right visual for your report, try our visual guide." />
+        content="<p>Gantt charts are used for scheduling and task management. Ordinary Gantt charts only display basic details such task IDs, names, and schedules. Gantt Chart by MAQ Software includes a grid that allows users to view data related to the task and the hierarchy of data categories. Users can sort the data based on any data point contained in the task.</p><p>With Gantt Chart by MAQ  Software, project managers can monitor project IDs, start times, end times, current status, project duration, project owners, and task priorities, as well as many other KPIs. Users can also view individual tasks and their progress.</p><p>Key features:</p><ul><li>Hierarchical view with expand / collapse option for parent levels.</li><li>Color bars based on category.</li><li>Task details on grid with hierarchy.</li><li>Showcase the task status as of the current date.</li><li>Sort data based on any parameter of grid.</li><li>Display tooltips for column headers, category labels, KPI indicators, data labels, and bars.</li></ul>" />
 
     <!-- Twitter Theme -->
     <meta name="twitter:widgets:theme" content="light">
 
     <!-- Title &amp; Favicon -->
-    <title>Power BI Custom Visual | MAQ Software</title>
+    <!-- <title>Gantt Chart | MAQ Software</title> loaded dynamically in customVisual.JS--> 
     <link rel="shortcut icon" type="image/x-icon" href="/images/logos/MAQ-Software-URL.png">
 
     <!-- Font -->
@@ -92,7 +92,6 @@
                         </div>
                         <div >
                             <div class="col-md-12" id="whatsNewContainer">
-                                <h4 class="title-xsmall">What's New</h4>
                                 <ul id="whatsNewList">
                                 </ul>
                             </div>
@@ -123,7 +122,7 @@
 <script src="/js/timber.master.min.js"></script>
 <script src="/js/customvisual.js?v=20230228"></script>
 <script>
-	getData();
+	getData("GanttChart");
 </script>
 <script>
     $("#header").load("/header");

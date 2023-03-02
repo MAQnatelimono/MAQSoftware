@@ -1,20 +1,20 @@
-var pbiReportTemplate='<iframe style="height:80vh"src="@pbiURL"frameborder="0" allowFullScreen="true"></iframe>';
+var pbiReportTemplate='<iframe referrerpolicy="no-referrer-when-downgrade" style="height:80vh"src="@pbiURL"frameborder="0" allowFullScreen="true"></iframe>';
 var contentTemplate='<div class="col-md-8"><h3 class="title-medium">@title by MAQ Software</h3></div><div class="col-md-12"><h3 class="title-small">@detail</h3><p class="title-xsmall">@Desc</p></div>'
 var listItemTemplate='<li class="title-xsmall">@placeholder</li> '
 var contactTemplate='<h4 class="title-xsmall">Contact Us</h4><p class="title-xsmall">Thank you for using @name by MAQ Software.</p><p class="title-xsmall">Do you have questions about this or any of our other Power BI custom visuals? Check out our community pages on <a href="https://maqsoftware.zendesk.com/hc/en-us/community/topics" target="_blank">Zendesk</a></p><p class="title-xsmall">For any issues related to any custom visual, contact us at <a href="mailto:support@maqsoftware.com" target="_blank">Support@MAQSoftware.com</a>. </p><p class="title-xsmall">For any priority requests or custom builds, contact us at <a href="mailto:sales@maqsoftware.com" target="_blank">Sales@MAQSoftware.com</a>. </p>'
 var newVersionTemplate = '<h4 class="title-xsmall">@newVersion</h4>'
 var buttonsTemplate = '<div><a href="@appsourceLink" target="blank" class="button medium pill bkg-theme bkg-hover-white color-white color-hover-theme mb-mobile-40">Get @name</a><a href="@appsourceLink" target="blank"  class="button medium pill border-theme bkg-white bkg-hover-theme color-theme color-hover-white">Download sample report</a></div>'
 
-function getData() {
+function getData(id) {
     $.getJSON("/resources/powerbi visuals/Visuals.json", function (data) {
-        loadData(data)
+        loadData(data,id)
       });
     
 }
 
-function loadData(data){
+function loadData(data,id){
     var query = window.location.href;
-    var id = (query.indexOf('=')>-1)?query.slice(query.lastIndexOf('=')+1):"RadarChart";
+    // var id = (query.indexOf('=')>-1)?query.slice(query.lastIndexOf('=')+1):"RadarChart";
 
     var visualContainer = $("#detailContainer")
     var pbiContainer = $("#pbiReportContainer")
@@ -28,6 +28,7 @@ function loadData(data){
     $.each(data, function (index) {
         $.each(Object.keys(this), function () {
             if(data[index][this].id===id){
+                document.title = data[index][this].name + " | MAQ Software";
 
                 // dynamically load it when available in json
                 var reportURL = data[index][this].pbiReportURL;

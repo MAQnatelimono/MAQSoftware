@@ -6,16 +6,16 @@
     <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Power BI Custom Visual | MAQ Software" />
+    <meta property="og:title" content="Dumbbell Chart | MAQ Software" />
     <meta property="og:type" content="website" />
     <meta property="og:description"
-        content="Expand your reporting capabilities with our certified Power BI custom visuals. If you need help choosing the right visual for your report, try our visual guide." />
+        content="<p> Dumbbell Chart by MAQ Software helps users analyze changes in critical data. This visual consists of a dual-axis combination chart: one axis of is marked by a circle, the other is marked by a line that spans data points provided by the user. Dumbbell Chart by MAQ Software is ideal for illustrating change and comparing the distance between data points. R package dependencies (auto-installed): plotly and ggplot2.</p><p>Key features:</p><ul><li>Display the performance of multiple indicators.</li><li>Compare the growth or loss of indicators across various categories.</li><li>Quickly download an image of the chart with the capture image widget.</li></ul>" />
 
     <!-- Twitter Theme -->
     <meta name="twitter:widgets:theme" content="light">
 
     <!-- Title &amp; Favicon -->
-    <title>Power BI Custom Visual | MAQ Software</title>
+    <!-- <title>DumbbellChart | MAQ Software</title> loaded dynamically in customVisual.JS--> 
     <link rel="shortcut icon" type="image/x-icon" href="/images/logos/MAQ-Software-URL.png">
 
     <!-- Font -->
@@ -92,7 +92,6 @@
                         </div>
                         <div >
                             <div class="col-md-12" id="whatsNewContainer">
-                                <h4 class="title-xsmall">What's New</h4>
                                 <ul id="whatsNewList">
                                 </ul>
                             </div>
@@ -123,7 +122,7 @@
 <script src="/js/timber.master.min.js"></script>
 <script src="/js/customvisual.js?v=20230228"></script>
 <script>
-	getData();
+	getData("DumbbellChart");
 </script>
 <script>
     $("#header").load("/header");

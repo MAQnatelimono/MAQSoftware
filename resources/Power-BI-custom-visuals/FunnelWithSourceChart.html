@@ -6,16 +6,16 @@
     <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Power BI Custom Visual | MAQ Software" />
+    <meta property="og:title" content="Funnel With Source Chart | MAQ Software" />
     <meta property="og:type" content="website" />
     <meta property="og:description"
-        content="Expand your reporting capabilities with our certified Power BI custom visuals. If you need help choosing the right visual for your report, try our visual guide." />
+        content="<p>Funnel with Source by MAQ Software shows a funnel journey for any metric or data point. This visual allows users to follow the path of a metric over various stages, as well as track the entry channel through which the metric reached the funnel.</p><p>Funnel with Source by MAQ Software is excellent for visualizing sales paths. It showcases the channel through which a lead enters the funnel and the lead's corresponding journey through the various stages of the sales cycle.</p><p>Key features:</p><ul><li>Filter data based on the channel selected and on the selection of any stage of the sales journey.</li><li>Support for cross-visual filtering.</li></ul>" />
 
     <!-- Twitter Theme -->
     <meta name="twitter:widgets:theme" content="light">
 
     <!-- Title &amp; Favicon -->
-    <title>Power BI Custom Visual | MAQ Software</title>
+    <!-- <title>FunnelWithSourceChart | MAQ Software</title> loaded dynamically in customVisual.JS--> 
     <link rel="shortcut icon" type="image/x-icon" href="/images/logos/MAQ-Software-URL.png">
 
     <!-- Font -->
@@ -92,7 +92,6 @@
                         </div>
                         <div >
                             <div class="col-md-12" id="whatsNewContainer">
-                                <h4 class="title-xsmall">What's New</h4>
                                 <ul id="whatsNewList">
                                 </ul>
                             </div>
@@ -123,7 +122,7 @@
 <script src="/js/timber.master.min.js"></script>
 <script src="/js/customvisual.js?v=20230228"></script>
 <script>
-	getData();
+	getData("FunnelWithSourceChart");
 </script>
 <script>
     $("#header").load("/header");

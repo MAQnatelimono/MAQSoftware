@@ -6,16 +6,16 @@
     <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Power BI Custom Visual | MAQ Software" />
+    <meta property="og:title" content="Organization Chart | MAQ Software" />
     <meta property="og:type" content="website" />
     <meta property="og:description"
-        content="Expand your reporting capabilities with our certified Power BI custom visuals. If you need help choosing the right visual for your report, try our visual guide." />
+        content="<p>Organization chart displays relationship between different entities. Users can visually display hierarchical information in a top-down structured tree format along with images.</p><p> Business Use Cases:</p><ul><li>Sales: Display sales structure along with territory responsibilities and actual sales. Group field can be used to visually indicate if a salesperson is below, on, or ahead of the target.</li><li>Marketing: Display various marketing campaigns at highest level. Various tactics and activities, displaying information such as cost, and other marketing KPIs measuring the impact of the campaigns, tactics, and activities at the next level.</li><li>Organization: Structure human resources according to respective departments and hierarchy.</li><li>IT: Display organizational IT assets, showing various asset categories, their availability volumes, broken down to specific assets.</li><li>Operations: Display a manufacturing process, with a breakdown of the components or ingredients to produce the product, along with their respective quantities in a hierarchical format.</li><li>Finance: Display budget allocation by divisions or projects, breaking them down into subdivisions or sub projects, color coding the components based on Group field to distinguish among those which are on budget, over budget, or within budget.</li></ul><p>Key features:</p><ul><li>Includes an optional image column to show images</li><li>Modify the look of the connector links</li><li>Color the cards based on a Legend column</li><li>Ability to customize the card dimension, border and corner radius</li><li>Interactivity with the cards to expand/collapse levels and cross-filter other visuals</li><li>Font formatting for labels and sublabels</li><li>Ability to zoom and drag the position of the visual</li><li>Configurable legend position and formatting</li><li>Support for context menu</li></ul>" />
 
     <!-- Twitter Theme -->
     <meta name="twitter:widgets:theme" content="light">
 
     <!-- Title &amp; Favicon -->
-    <title>Power BI Custom Visual | MAQ Software</title>
+    <!-- <title>Organization Chart | MAQ Software</title> loaded dynamically in customVisual.JS--> 
     <link rel="shortcut icon" type="image/x-icon" href="/images/logos/MAQ-Software-URL.png">
 
     <!-- Font -->
@@ -92,7 +92,6 @@
                         </div>
                         <div >
                             <div class="col-md-12" id="whatsNewContainer">
-                                <h4 class="title-xsmall">What's New</h4>
                                 <ul id="whatsNewList">
                                 </ul>
                             </div>
@@ -123,7 +122,7 @@
 <script src="/js/timber.master.min.js"></script>
 <script src="/js/customvisual.js?v=20230228"></script>
 <script>
-	getData();
+	getData("OrganizationChart");
 </script>
 <script>
     $("#header").load("/header");

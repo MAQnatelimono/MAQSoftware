@@ -6,16 +6,16 @@
     <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Power BI Custom Visual | MAQ Software" />
+    <meta property="og:title" content="Forecast using Neural Network | MAQ Software" />
     <meta property="og:type" content="website" />
     <meta property="og:description"
-        content="Expand your reporting capabilities with our certified Power BI custom visuals. If you need help choosing the right visual for your report, try our visual guide." />
+        content="<p>Forecasting using Neural Network by MAQ Software implements an “Artificial Neural Network” to learn from historical data and predict future values. This visual uses a single layer feed forward network with lagged inputs to process time series values. R package dependencies (auto-installed): forecast, plotly, zoo, xts.</p><p>Forecasting using Neural Network by MAQ Software is useful for forecasting budgets, sales, demand, or inventory.</p><p>Key features:</p><ul><li>Ability to use years or distinct numerical values in place of date and time field. (The visual will work for both numerical series, i.e. years or numbers, and proper date and time values).</li><li>Hover tooltips and highlighting of specific portions of the plot.</li><li>Capability to manually adjust the parameters of the learning model.</li></ul>" />
 
     <!-- Twitter Theme -->
     <meta name="twitter:widgets:theme" content="light">
 
     <!-- Title &amp; Favicon -->
-    <title>Power BI Custom Visual | MAQ Software</title>
+    <!-- <title>Forecast using Neural Network | MAQ Software</title> loaded dynamically in customVisual.JS--> 
     <link rel="shortcut icon" type="image/x-icon" href="/images/logos/MAQ-Software-URL.png">
 
     <!-- Font -->
@@ -92,7 +92,6 @@
                         </div>
                         <div >
                             <div class="col-md-12" id="whatsNewContainer">
-                                <h4 class="title-xsmall">What's New</h4>
                                 <ul id="whatsNewList">
                                 </ul>
                             </div>
@@ -123,7 +122,7 @@
 <script src="/js/timber.master.min.js"></script>
 <script src="/js/customvisual.js?v=20230228"></script>
 <script>
-	getData();
+	getData("ForecastUsingNeuralNetwork");
 </script>
 <script>
     $("#header").load("/header");

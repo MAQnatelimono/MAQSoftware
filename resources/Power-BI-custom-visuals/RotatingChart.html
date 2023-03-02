@@ -6,16 +6,16 @@
     <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Power BI Custom Visual | MAQ Software" />
+    <meta property="og:title" content="Rotating Chart | MAQ Software" />
     <meta property="og:type" content="website" />
     <meta property="og:description"
-        content="Expand your reporting capabilities with our certified Power BI custom visuals. If you need help choosing the right visual for your report, try our visual guide." />
+        content="<p>Rotating Chart by MAQ Software is a horizontal bar chart that rotates on the horizontal axis to showcase multiple KPIs. Each flip can have a new value based on the number of KPIs that need to be displayed. For better visibility, users can set a timer for the rotation delay.</p><p>Business reports often require many KPIs in a single report, especially when showcasing historical data. Rotating Chart by MAQ Software lets users display multiple KPIs or metrics in a small viewing area, saving space on lengthy reports.</p><p>Key features:</p><ul><li>The tile can be rotated on the horizontal or the vertical axis.</li><li>Flip delay time can be specified, ensuring that all data shown in the tile is readable.</li><li>Includes a 3D effect option, emphasizing when different data is displayed.</li><li>Includes basic formatting options such as font type, size, and color for the label and title, background, and tile borders.</li></ul>" />
 
     <!-- Twitter Theme -->
     <meta name="twitter:widgets:theme" content="light">
 
     <!-- Title &amp; Favicon -->
-    <title>Power BI Custom Visual | MAQ Software</title>
+    <!-- <title>RotatingChart | MAQ Software</title> loaded dynamically in customVisual.JS--> 
     <link rel="shortcut icon" type="image/x-icon" href="/images/logos/MAQ-Software-URL.png">
 
     <!-- Font -->
@@ -92,7 +92,6 @@
                         </div>
                         <div >
                             <div class="col-md-12" id="whatsNewContainer">
-                                <h4 class="title-xsmall">What's New</h4>
                                 <ul id="whatsNewList">
                                 </ul>
                             </div>
@@ -123,7 +122,7 @@
 <script src="/js/timber.master.min.js"></script>
 <script src="/js/customvisual.js?v=20230228"></script>
 <script>
-	getData();
+	getData("RotatingChart");
 </script>
 <script>
     $("#header").load("/header");

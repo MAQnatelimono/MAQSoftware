@@ -6,16 +6,16 @@
     <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Power BI Custom Visual | MAQ Software" />
+    <meta property="og:title" content="Horizontal Funnel Chart | MAQ Software" />
     <meta property="og:type" content="website" />
     <meta property="og:description"
-        content="Expand your reporting capabilities with our certified Power BI custom visuals. If you need help choosing the right visual for your report, try our visual guide." />
+        content="<p>While other Power BI funnels are limited to displaying one key metric for each funnel stage, Horizontal Funnel by MAQ Software allows users to display a second, customizable metric beneath the primary measure. The secondary measure defines the size of the colored funnel segments. For example, users can call out the dropout value or percentage next to the primary measure.</p><p>Horizontal Funnel by MAQ Software is useful in many applications, including sales pipeline analysis (allowing users to view both the sales process and conversion rates at each stage), website traffic analysis, order fulfillment, or any business process analysis that involves multiple stages.</p><p>Key features:</p><ul><li>Display a secondary measure below the colored bars.</li><li>Tooltip to display a brief explanation of the data.</li><li>Change the color configuration of the funnel stage and change the color, font size, display units, and decimal places of the labels.</li></ul>" />
 
     <!-- Twitter Theme -->
     <meta name="twitter:widgets:theme" content="light">
 
     <!-- Title &amp; Favicon -->
-    <title>Power BI Custom Visual | MAQ Software</title>
+    <!-- <title>HorizontalFunnelChart | MAQ Software</title> loaded dynamically in customVisual.JS--> 
     <link rel="shortcut icon" type="image/x-icon" href="/images/logos/MAQ-Software-URL.png">
 
     <!-- Font -->
@@ -92,7 +92,6 @@
                         </div>
                         <div >
                             <div class="col-md-12" id="whatsNewContainer">
-                                <h4 class="title-xsmall">What's New</h4>
                                 <ul id="whatsNewList">
                                 </ul>
                             </div>
@@ -123,7 +122,7 @@
 <script src="/js/timber.master.min.js"></script>
 <script src="/js/customvisual.js?v=20230228"></script>
 <script>
-	getData();
+	getData("HorizontalFunnelChart");
 </script>
 <script>
     $("#header").load("/header");

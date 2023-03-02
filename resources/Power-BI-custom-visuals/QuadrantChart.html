@@ -6,16 +6,16 @@
     <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Power BI Custom Visual | MAQ Software" />
+    <meta property="og:title" content="Quadrant Chart | MAQ Software" />
     <meta property="og:type" content="website" />
     <meta property="og:description"
-        content="Expand your reporting capabilities with our certified Power BI custom visuals. If you need help choosing the right visual for your report, try our visual guide." />
+        content="<p>Quadrant Chart by MAQ Software is a bubble chart with a background divided into four equal sections.This visual is useful for plotting data that contains three measures using an X-axis, a Y-axis, and varying bubble sizes that represent the value of the third measure.</p><p>Quadrant Chart by MAQ Software is useful for showing relationships, such as the relationship between production cost and gross profit. Users can place cost values on the X-axis and profit on the Y-axis. The four sections rate the performance (cost vs. profit) as bad, good, better, or best.Bubbles in each quadrant represent the health of each respective quadrant. The size of the bubble represents the number of units sold. Quadrant Chart by MAQ Software is compact, yet shows a great deal of information.</p><p>Key features:</p><ul><li>Customizable bubble colors.</li><li>Formatting options for quadrants and quadrant lines including naming for each quadrant, X-axis division line, Y-axis division line, and a choice of dotted or solid lines.</li><li>Custom title, title text, labels, display units, and decimal points for each axis.</li><li>Support for Power BI bookmarks.</li></ul>" />
 
     <!-- Twitter Theme -->
     <meta name="twitter:widgets:theme" content="light">
 
     <!-- Title &amp; Favicon -->
-    <title>Power BI Custom Visual | MAQ Software</title>
+    <!-- <title>Quadrant Chart Chart | MAQ Software</title> loaded dynamically in customVisual.JS--> 
     <link rel="shortcut icon" type="image/x-icon" href="/images/logos/MAQ-Software-URL.png">
 
     <!-- Font -->
@@ -92,7 +92,6 @@
                         </div>
                         <div >
                             <div class="col-md-12" id="whatsNewContainer">
-                                <h4 class="title-xsmall">What's New</h4>
                                 <ul id="whatsNewList">
                                 </ul>
                             </div>
@@ -123,7 +122,7 @@
 <script src="/js/timber.master.min.js"></script>
 <script src="/js/customvisual.js?v=20230228"></script>
 <script>
-	getData();
+	getData("QuadrantChart");
 </script>
 <script>
     $("#header").load("/header");

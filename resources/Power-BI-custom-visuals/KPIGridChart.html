@@ -6,16 +6,16 @@
     <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Power BI Custom Visual | MAQ Software" />
+    <meta property="og:title" content="KPI Grid Chart | MAQ Software" />
     <meta property="og:type" content="website" />
     <meta property="og:description"
-        content="Expand your reporting capabilities with our certified Power BI custom visuals. If you need help choosing the right visual for your report, try our visual guide." />
+        content="<p>KPI Grid by MAQ Software allows users to track productivity and performance data by displaying key data in hierarchical order.Users can specify the time periods shown, making gauging performance according to internal deadlines and benchmarks easy.</p><p>KPI Grid by MAQ Software is useful for adding visual interest to reports, such as yearly sales data.In addition to displaying the data, users can add images to emphasize trends.</p><p>Key features:</p><ul><li>Include custom images such as rising or falling arrows.</li><li>Include separators between columns, highlighting certain categories for quick comparison.</li><li>Change row background colors, text size, and text color.</li></ul>" />
 
     <!-- Twitter Theme -->
     <meta name="twitter:widgets:theme" content="light">
 
     <!-- Title &amp; Favicon -->
-    <title>Power BI Custom Visual | MAQ Software</title>
+    <!-- <title>KPI Grid Chart | MAQ Software</title> loaded dynamically in customVisual.JS--> 
     <link rel="shortcut icon" type="image/x-icon" href="/images/logos/MAQ-Software-URL.png">
 
     <!-- Font -->
@@ -92,7 +92,6 @@
                         </div>
                         <div >
                             <div class="col-md-12" id="whatsNewContainer">
-                                <h4 class="title-xsmall">What's New</h4>
                                 <ul id="whatsNewList">
                                 </ul>
                             </div>
@@ -123,7 +122,7 @@
 <script src="/js/timber.master.min.js"></script>
 <script src="/js/customvisual.js?v=20230228"></script>
 <script>
-	getData();
+	getData("KPIGridChart");
 </script>
 <script>
     $("#header").load("/header");
