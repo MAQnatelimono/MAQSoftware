@@ -34,34 +34,35 @@ const data = [
     Content: "LoadFAST provides an automated solution to capture, analyze, and optimize the page load time (PLT) of your reports.",
     link: "https://azuremarketplace.microsoft.com/en-us/marketplace/apps/maqsoftware.powerbiloadanalyzer?tab=Overview"
   },
-  {
-    category: "consulting",
-    subCategory: "powerbi",
-    Heading: "Admin Center of Excellence: 2-Day Workshop",
-    Content: "Power BI offers multiple ways to access data, implement security, and share reports.",
-    link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.admincoe?page=1&exp=ubp8&search=maq"
-  },
+  // {
+  //   category: "consulting",
+  //   subCategory: "powerbi",
+  //   Heading: "Admin Center of Excellence: 2-Day Workshop",
+  //   Content: "Power BI offers multiple ways to access data, implement security, and share reports.",
+  //   link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.admincoe?page=1&exp=ubp8&search=maq"
+  // },
   {
     category: "consulting",
     subCategory: "powerbi",
     Heading: "Advanced Data Analytics with Power BI: 3-Day Workshop",
     Content: "Elevate your data analytics capabilities with a 3-day Power BI workshop.",
     link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.advanced_data_analytics_with_powerbi_workshop?page=1&exp=ubp8&search=maq"
+        // https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.advanced_diad?page=1&exp=ubp8&search=maq
   },
   {
     category: "consulting",
     subCategory: "powerbi",
     Heading: "Advanced Data Modeling with Power BI: 3-Day Workshop",
     Content: "Deepen your data modeling expertise in a 3-day Power BI workshop.",
-    link: "https://azuremarketplace.microsoft.com/en-us/marketplace/apps/maqsoftware.embedfastpowerbi?tab=Overview"
+    link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.advanced_diad?page=1&exp=ubp8&search=maq"
   },
-  {
-    category: "consulting",
-    subCategory: "powerplatform",
-    Heading: "Workflow Management Power App: 1-Week Implementation",
-    Content: "Effectively collaborating across departments can be difficult. With competing priorities, varied schedules, and the ever-present need for back-and-forth communication.",
-    link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.exit_tracker_3?page=1&exp=ubp8&search=maq"
-  },
+  // {
+  //   category: "consulting",
+  //   subCategory: "powerplatform",
+  //   Heading: "Workflow Management Power App: 1-Week Implementation",
+  //   Content: "Effectively collaborating across departments can be difficult. With competing priorities, varied schedules, and the ever-present need for back-and-forth communication.",
+  //   link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.exit_tracker_3?page=1&exp=ubp8&search=maq"
+  // },
   {
     category: "consulting",
     subCategory: "powerplatform",
@@ -69,13 +70,13 @@ const data = [
     Content: "Explore the capabilities of the Power Platform in a complimentary 2-hour briefing.",
     link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.power_platform_2_hours_consultation?page=1&exp=ubp8&search=maq"
   },
-  {
-    category: "consulting",
-    subCategory: "powerplatform",
-    Heading: "Power Platform: 1-Hour Assessment",
-    Content: "Power Platform tools enable large-scale organizations to improve their operations and champion the creativity of citizen developers.",
-    link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.power_platform_1_hour_assessment?page=1&exp=ubp8&search=maq"
-  },
+  // {
+  //   category: "consulting",
+  //   subCategory: "powerplatform",
+  //   Heading: "Power Platform: 1-Hour Assessment",
+  //   Content: "Power Platform tools enable large-scale organizations to improve their operations and champion the creativity of citizen developers.",
+  //   link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.power_platform_1_hour_assessment?page=1&exp=ubp8&search=maq"
+  // },
   {
     category: "consulting",
     subCategory: "powerplatform",
@@ -83,34 +84,34 @@ const data = [
     Content: "Launch your Power Platform Center of Excellence with a comprehensive 3-week program.",
     link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.power_platform_coe_starter_kit?page=1&exp=ubp8&search=maq"
   },
-  {
-    category: "consulting",
-    subCategory: "powerplatform",
-    Heading: "Power Platform: App in a Day",
-    Content: "Our workshop enables developers to create professional apps. We will build off your existing skills using traditional business applications like Excel and PowerPoint.",
-    link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.power_platform_app_in_a_day?page=1&search=maq&product=power-platform&sortBy=Popularity"
-  },
-  {
-    category: "consulting",
-    subCategory: "dynamics",
-    Heading: "Dynamics 365 Security Audit: 2-Day Assessment",
-    Content: "In an era of remote work and global data breaches, data security is a key priority for all businesses.",
-    link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.dynamics_security_assessment?page=1&search=maq&product=dynamics-365"
-  },
-  {
-    category: "consulting",
-    subCategory: "dynamics",
-    Heading: "Dynamic Routing Rules: 4-Week Implementation",
-    Content: "A routing rule consists of a set of conditions and a destination user/team. Routing rules ensure that records are automatically routed to the right people at the right time.",
-    link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.dynamic_routing_rules?page=1&search=maq&product=dynamics-365"
-  },
-  {
-    category: "consulting",
-    subCategory: "",
-    Heading: "Customer Insights: 4 week Implementation",
-    Content: "MAQ Software has over a decade's experience in data management, data visualization, and insights generation. Our four-week implementation engagement will provide you an overview of Microsoft Customer Insights.",
-    link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.customer_insights_4wk_implementation?page=1&search=maq&product=dynamics-365"
-  },
+  // {
+  //   category: "consulting",
+  //   subCategory: "powerplatform",
+  //   Heading: "Power Platform: App in a Day",
+  //   Content: "Our workshop enables developers to create professional apps. We will build off your existing skills using traditional business applications like Excel and PowerPoint.",
+  //   link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.power_platform_app_in_a_day?page=1&search=maq&product=power-platform&sortBy=Popularity"
+  // },
+  // {
+  //   category: "consulting",
+  //   subCategory: "dynamics",
+  //   Heading: "Dynamics 365 Security Audit: 2-Day Assessment",
+  //   Content: "In an era of remote work and global data breaches, data security is a key priority for all businesses.",
+  //   link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.dynamics_security_assessment?page=1&search=maq&product=dynamics-365"
+  // },
+  // {
+  //   category: "consulting",
+  //   subCategory: "dynamics",
+  //   Heading: "Dynamic Routing Rules: 4-Week Implementation",
+  //   Content: "A routing rule consists of a set of conditions and a destination user/team. Routing rules ensure that records are automatically routed to the right people at the right time.",
+  //   link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.dynamic_routing_rules?page=1&search=maq&product=dynamics-365"
+  // },
+  // {
+  //   category: "consulting",
+  //   subCategory: "",
+  //   Heading: "Customer Insights: 4 week Implementation",
+  //   Content: "MAQ Software has over a decade's experience in data management, data visualization, and insights generation. Our four-week implementation engagement will provide you an overview of Microsoft Customer Insights.",
+  //   link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.customer_insights_4wk_implementation?page=1&search=maq&product=dynamics-365"
+  // },
   {
     category: "consulting",
     subCategory: "powerbi",
@@ -123,7 +124,7 @@ const data = [
     subCategory: "powerbi",
     Heading: "Advanced Visualization with Power BI: 1-Day Workshop",
     Content: "Improve your Power BI visualization skills in a comprehensive 1-day workshop.",
-    link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.advanced_diad?page=1&exp=ubp8&search=maq"
+    link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.advanced_visualization_power_bi_1-day_workshop?page=1&exp=ubp8&search=Advanced%20data%20visualization"
   },
   {
     category: "consulting",
@@ -265,13 +266,13 @@ const data = [
     Content: "Streamline workflow management with a 1-week Power App implementation, ensuring efficient processes.",
     link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.exit_tracker_3?page=1&exp=ubp8&search=maq"
   },
-  {
-    category: "consulting",
-    subCategory: "powerplatform",
-    Heading: "Power Platform: Free 2-Hour Briefing",
-    Content: "Power Platform tools are low-code/no-code solutions that enable organizations to drive their digital transformation journey.",
-    link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.power_platform_2_hours_consultation?page=1&exp=ubp8&search=maq"
-  },
+  // {
+  //   category: "consulting",
+  //   subCategory: "powerplatform",
+  //   Heading: "Power Platform: Free 2-Hour Briefing",
+  //   Content: "Power Platform tools are low-code/no-code solutions that enable organizations to drive their digital transformation journey.",
+  //   link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.power_platform_2_hours_consultation?page=1&exp=ubp8&search=maq"
+  // },
   {
     category: "consulting",
     subCategory: "powerplatform",
@@ -286,13 +287,13 @@ const data = [
     Content: "Evaluate the potential of the Power Platform in a concise 1-hour assessment.",
     link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.power_platform_1_hour_assessment?page=1&exp=ubp8&search=maq"
   },
-  {
-    category: "consulting",
-    subCategory: "powerplatform",
-    Heading: "Power Platform CoE Starter Kit: 3-Week Workshop",
-    Content: "To ensure your organization remains both efficient and secure, you need to effectively govern all Power Platform assets.",
-    link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.power_platform_coe_starter_kit?page=1&exp=ubp8&search=maq"
-  },
+  // {
+  //   category: "consulting",
+  //   subCategory: "powerplatform",
+  //   Heading: "Power Platform CoE Starter Kit: 3-Week Workshop",
+  //   Content: "To ensure your organization remains both efficient and secure, you need to effectively govern all Power Platform assets.",
+  //   link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.power_platform_coe_starter_kit?page=1&exp=ubp8&search=maq"
+  // },
   {
     category: "consulting",
     subCategory: "powerplatform",
