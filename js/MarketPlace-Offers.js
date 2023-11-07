@@ -47,7 +47,6 @@ const data = [
     Heading: "Advanced Data Analytics with Power BI: 3-Day Workshop",
     Content: "Elevate your data analytics capabilities with a 3-day Power BI workshop.",
     link: "https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.advanced_data_analytics_with_powerbi_workshop?page=1&exp=ubp8&search=maq"
-        // https://appsource.microsoft.com/en-US/marketplace/consulting-services/maqsoftware.advanced_diad?page=1&exp=ubp8&search=maq
   },
   {
     category: "consulting",
