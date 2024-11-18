@@ -1,4 +1,4 @@
-$("#header").load("/header.html", function() {
+$("#header").load("/header", function() {
     $('#header .icon-menu-hamburger').on('click', function() {
       // console.log('Nav item clicked in header!');
         const navbar = document.getElementById('navbar-right');
