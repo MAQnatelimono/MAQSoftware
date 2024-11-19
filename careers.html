@@ -329,6 +329,7 @@
 
 			<!-- Js -->
 			<script src="/js/jquery-3.2.1.min.js"></script>
+			<script src="js/sidenav.js"></script>
 			<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3JCAhNj6tVAO_LSb8M-AzMlidiT-RPAs"></script> -->
 			<!-- <script src="/js/timber.master.min.js"></script> -->
 
@@ -349,8 +350,12 @@
 				const script = document.createElement('script');
 				script.src = '/js/timber.master.min.js';
 
+				const nav_script = document.createElement('script');
+				nav_script.script = 'js/sidenav.js'
+
 				// Append to the `head` element
 				document.head.appendChild(script);
+				document.head.appendChild(nav_script);
 				// $("#header").load("/header");
 				// $("#footer").load("/footer");
 				// $("#header").load("/header.html");
@@ -371,7 +376,6 @@
 			</script>
 		</div>
 	</div>
-	<script src="js/sidenav.js"></script>
 </body>
 
 </html>
